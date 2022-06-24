@@ -117,7 +117,7 @@ pb_bkg_in = input('please enter the pb210 background value or hit enter to use t
 if pb_bkg_in == '':
     pb_bkg = None
 else:
-    pb_bkg = float(pb_bkg)
+    pb_bkg = float(pb_bkg_in)
 
 time, time_error = get_crs_age(data_struct['depth_low'], data_struct['volume'], data_struct['weight'], data_struct['210pb'], eq_row, data_struct['210pb_err'],
                                pb_bkg, p, refdate, ref_line, ref_year)
